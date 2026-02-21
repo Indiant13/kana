@@ -3,6 +3,7 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 import { LoginModal } from "../../features/login";
 import type { AuthUserRecord } from "../../services/auth";
+import { AUTH_STORAGE_KEY, clearAuthSessionStorage } from "./logout";
 
 type AuthSessionUser = {
   id: string;
@@ -19,7 +20,6 @@ type AuthSessionContextValue = {
   logout: () => void;
 };
 
-const AUTH_STORAGE_KEY = "kana.auth.session";
 const IVAN_USER_ID = "1";
 const IVAN_TILE_AVATAR = "https://i.pravatar.cc/300?img=1";
 const AuthSessionContext = createContext<AuthSessionContextValue | null>(null);
@@ -48,7 +48,7 @@ export function AuthSessionProvider({ children }: { children: ReactNode }) {
       closeLogin: () => setIsLoginOpen(false),
       logout: () => {
         setUser(null);
-        localStorage.removeItem(AUTH_STORAGE_KEY);
+        clearAuthSessionStorage();
       },
     }),
     [user],
