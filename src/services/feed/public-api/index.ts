@@ -1,0 +1,1 @@
+export { getFeedEvents } from "./getFeed";

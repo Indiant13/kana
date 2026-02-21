@@ -29,14 +29,21 @@
   gap: 32px;
   flex-wrap: wrap;
   justify-content: flex-end;
+  position: relative;
+  z-index: 2;
 }
 
 .link {
+  display: inline-flex;
+  align-items: center;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s ease;
+  pointer-events: auto;
+  position: relative;
+  z-index: 3;
 }
 
 .link:hover {
