@@ -1,0 +1,1 @@
+export { SocialsWidget } from "./SocialsWidget";
