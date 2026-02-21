@@ -1,0 +1,12 @@
+import styles from "./Footer.module.css";
+
+export function Footer() {
+  const footerText =
+    "KANA SPORT \u00a9 \u0412\u0441\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u044b";
+
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.container}>{footerText}</div>
+    </footer>
+  );
+}
