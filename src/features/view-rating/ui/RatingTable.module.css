@@ -6,6 +6,15 @@
 .controls {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  color: #4a2f22;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .select {
@@ -60,4 +69,11 @@
 .topRow .cell {
   color: #fff;
   font-weight: 600;
+}
+
+.empty {
+  margin: 0;
+  padding: 16px;
+  color: #5d4134;
+  font-size: 14px;
 }

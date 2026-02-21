@@ -1,0 +1,1 @@
+export { getVenues } from "./getVenues";
