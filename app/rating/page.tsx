@@ -1,6 +1,7 @@
 import { Header } from "../../src/widgets/header-widget";
 import { Footer } from "../../src/widgets/footer-widget";
 import { InternalPageLayout } from "../../src/widgets/internal-page-layout";
+import { RatingWidget } from "../../src/widgets/rating-widget";
 import styles from "../page.module.css";
 
 export default function RatingPage() {
@@ -9,9 +10,7 @@ export default function RatingPage() {
       <Header />
       <main className={styles.main}>
         <InternalPageLayout>
-          <section>
-            <h1>{"\u0420\u0435\u0439\u0442\u0438\u043d\u0433"}</h1>
-          </section>
+          <RatingWidget />
         </InternalPageLayout>
       </main>
       <Footer />

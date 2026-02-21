@@ -1,0 +1,1 @@
+export { getYearlyRanking } from "./getYearlyRanking";
