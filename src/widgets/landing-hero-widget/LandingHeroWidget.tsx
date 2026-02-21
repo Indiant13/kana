@@ -1,5 +1,7 @@
-import { LandingHero } from "../../features/landing-hero";
+"use client";
+
+import { PlayerRegistrationProcess } from "../../processes/player-registration";
 
 export function LandingHeroWidget() {
-  return <LandingHero />;
+  return <PlayerRegistrationProcess />;
 }

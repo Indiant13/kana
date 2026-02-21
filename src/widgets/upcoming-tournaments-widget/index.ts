@@ -1,0 +1,1 @@
+export { UpcomingTournamentsWidget } from "./UpcomingTournamentsWidget";

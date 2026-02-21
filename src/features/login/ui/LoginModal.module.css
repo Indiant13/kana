@@ -1,0 +1,88 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 120;
+  padding: 16px;
+}
+
+.modal {
+  width: min(460px, 100%);
+  background: #f8e6d1;
+  border-radius: 14px;
+  border: 1px solid #d8a883;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  color: #4a2f22;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.close {
+  border: 0;
+  background: transparent;
+  color: #7d4c35;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.label {
+  color: #5a3c2e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  border: 1px solid #d29f79;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: #fffaf5;
+  color: #4a2f22;
+}
+
+.error {
+  margin: 0;
+  color: #ad3a1f;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #c65a2e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

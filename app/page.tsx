@@ -1,5 +1,5 @@
 import { Header } from "../src/widgets/header-widget";
-import { LandingHeroWidget } from "../src/widgets/landing-hero-widget";
+import { LandingAuthContentWidget } from "../src/widgets/landing-auth-content-widget";
 import { VenuesWidget } from "../src/widgets/venues-widget";
 import { SocialsWidget } from "../src/widgets/socials-widget";
 import { PlayersGridWidget } from "../src/widgets/players-grid-widget";
@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
-        <LandingHeroWidget />
+        <LandingAuthContentWidget />
         <VenuesWidget />
         <SocialsWidget />
         <PlayersGridWidget />
